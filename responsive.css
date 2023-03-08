@@ -1,0 +1,222 @@
+/* Start:Responsive */
+@media(max-width: 870px){
+
+    /*Start: Hamburger Menu  */
+          .hamburger{
+              display: block;
+          }
+      
+          .hamburger.active .bar:nth-child(2){
+              opacity: 0;
+          }
+      
+          .hamburger.active .bar:nth-child(1){
+              transform: translateY(13px) rotate(45deg);
+          }
+      
+          .hamburger.active .bar:nth-child(3){
+              transform: translateY(-13px) rotate(-45deg);
+          }
+      
+          .nav-links{
+              justify-content: space-between;
+              align-items: center;
+          }
+      
+      
+       .nav-menu{
+           display: flex;
+           position: fixed;
+           Left: -100%;
+           top: 79px;
+           gap: 0;
+           flex-direction: column;
+           background-color: rgb(0, 0, 0);
+           width: 100%;
+           text-align: center;
+           transition: 0.3s;
+           z-index: 10;
+       }
+      
+       .nav-item{
+           margin: 16px 0;
+       }
+      
+       .nav-menu.active{
+           Left: 0;
+       }
+   
+       .navigation-bar{
+           margin: 0px;
+       }
+    /*End: Hamburger Menu  */
+      
+    /* Start: Name header container*/
+      
+       .container-info{
+           display: flex;
+           flex-direction: column;
+           margin: auto;
+           align-items: center;
+           justify-content: center;
+           /* text-align: center; */
+       }
+      
+       .cta{
+           margin-right: 0px;
+           margin-top: 50px;
+           align-items: center;
+           justify-content: center;
+           text-align: center;
+       }
+      
+       .cta h1 {
+            color: white;
+           margin-bottom: 20px;
+           font-size: 30px;
+       }
+    /* End: Name header container*/
+      
+    /* Start: Header image */
+       .overlap-image{
+           /* background-color: blue; */
+           height: 330px;
+           width: 330px;
+           position: relative;
+           margin-left: 0px;
+           align-items: center;
+       }
+      
+       .overlap-image1 {
+           background: none;
+           position: absolute;
+           height: 340PX;
+           width: 340px;
+           top: 11px;
+           left: 6px;
+           transition: 1s;
+       }
+      
+       .overlap-image2 {
+           background: none;
+           position: absolute;
+           width: 265PX;
+           height: 282px;
+           top: 71px;
+           left: 31px;   
+       }
+      
+       .overlap-image:hover .overlap-image1{
+           top: 3px;
+       }
+    /* End: Header image */
+      
+   
+    /* Start: About Section  */
+      .about-img{
+          width: 238px;
+          height: 310px;
+          margin-top: 50px;
+          position: relative;
+          margin-right: 0;
+       }
+      
+      .about-img img{
+          width: 238px;
+          height: 310px;
+       }
+      
+      
+      .about-text {
+          width: auto;
+          margin-left: 0;
+       }
+      
+      .about-text h1 {
+          font-size: 35px;
+          text-transform: capitalize;
+          margin-bottom: 10px;
+          color: #ff914d;
+       }
+      .about-text h5 {
+          font-size: 15px;
+          text-transform: capitalize;
+          margin-bottom: 10px;
+          letter-spacing: 2px;
+       }
+      .about-text p {
+          letter-spacing: 1px;
+          line-height: 15px;
+          font-size: 10px;
+          margin-bottom: 0px;
+       }
+    /* End: About Section  */
+   
+    /* Start: Skill Section */
+      
+       .grid{
+           grid-template-columns: auto;
+       }
+   
+       .row h3{
+           font-size: 22px;
+       }
+   
+       .skill-title h1{
+          font-size: 35px;
+          text-transform: capitalize;
+          margin-bottom: 10px;
+          color: #ff914d;
+       }
+   
+   
+    /* End: Skill Section */
+   
+   
+    /* Start: Project Section */
+       .project-title h1{
+           margin-bottom: 0;
+           font-size: 35px;
+           text-transform: capitalize;
+           margin-bottom: 10px;
+           color: #ff914d;
+       }
+   
+       .container-box{
+           padding: 15px;
+       }
+   
+       .project-grid{
+           grid-template-columns: auto;
+           gap: 0;
+       }
+   
+       .discription {
+           top: 35%;
+       }
+    /* End: Project Section */
+   
+       /* Start: Contact Section */
+       
+       form h1 {
+           font-size: 35px;
+           text-transform: capitalize;
+           margin-bottom: 20px;
+           margin-top: 25px;
+           color: #ff914d;
+       }
+       
+       form p{
+           margin-top: -2px;
+           margin-bottom: 10px;
+       } 
+       
+       
+       form button{
+           padding: 10px;
+           width: 110px;
+           margin: 15px auto 0;
+       }
+    /* End: Contact Section */
+   
+   }

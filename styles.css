@@ -1,0 +1,469 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    background: black;
+    color: rgb(202, 201, 201);
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+html body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Start: Component  */
+section {
+    padding: 80px 5%;
+}
+.accent-word {
+    color: #ff914d;
+}
+
+h1{
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #ff914d;
+}
+
+.btn{
+    background: black;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 30px 18px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 2px 2px 5px #ff914d;
+}
+.btn:hover{
+    color: #ff914d;
+}
+
+.btn-div{
+    text-align: center;
+}
+
+
+.container{
+    /* background: yellow; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+}
+
+.container-info{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+/* End: Component  */
+
+/* Start: Navigation Bar */
+.navigation-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 50px;
+}
+
+.navigation-bar ul{
+    display: flex;
+}
+
+.navigation-bar a{
+    padding: 20px;
+    margin-right: 30px;
+    line-height: 80px;
+    color: #ff914d;
+}
+  
+img.header-logo{
+    max-width: 33%;
+    height: auto;
+}
+  
+.navigation-bar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.9;
+}
+  
+a:hover{
+    color: white;
+}
+/* End: Navigation Bar */
+
+
+/* Start: Hamburger */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 10px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ff914d;
+}
+/* End: Hamburger */
+
+/* Start: Name header */  
+.cta h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 55px;
+}
+
+span{
+    color: #ff914d;
+}
+/* End: Name header */
+
+
+/* Start: Header image */
+.overlap-image{
+    height: 700px;
+    width: 700px;
+    position: relative;
+    /* margin-left: 50px; */
+
+}
+
+.overlap-image1 {
+    background: none;
+    position: absolute;
+    height: 700PX;
+    width: 700px;
+    top: 10px;
+    left: 10px;
+    transition: 1s;
+}
+
+.overlap-image2 {
+    background: none;
+    position: absolute;
+    width: 465PX;
+    height: 482px;
+    top: 150px;
+    left: 100px;
+    
+}
+
+.overlap-image:hover .overlap-image1{
+    top: 50px;
+}
+
+    /* .overlap-image:hover .overlap-image2{
+        top: 10px;
+    } */
+/* End: Header image */
+
+/* Start: About Section */
+.about-img{
+    width: 538px;
+    height: 610px;
+    margin-top: 50px;
+    position: relative;
+    margin-right: 50px;
+}
+
+.about-img img{
+    width: 538px;
+    height: 610px;
+}
+
+.top-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.top-img:hover{
+    opacity: 1;
+}
+
+.about-text {
+    width: 710px;
+    margin-left: 100px;
+}
+
+.about-text h1 {
+
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #ff914d;
+}
+.about-text h5 {
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.about-text p {
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    /* margin-bottom: 45px; */
+}
+
+/* End: About Section */
+
+
+/* Start: Skill Section */
+.skill-title h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.grid{
+    max-width:  1200px;
+    margin: auto;
+    /* background: yellow; */
+}
+
+.grid{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(4, auto);
+    grid-auto-rows: 137px;
+    gap: 70px;
+    
+}
+
+.grid > div{
+    /* background-color: yellow; */
+    /* padding: 10px; */
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #ff914d;
+    text-align: center;
+}
+
+.row {
+    padding: 55px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.row h3{
+    font-weight: 300;
+}
+/* End: Skill Section */
+
+
+/* Start: Project Section */
+.project-title h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-grid{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: auto;
+    gap: 0;
+}
+
+.container-box {
+    padding: 55px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container-box:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0a0a0a;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.github {
+    top: 50%;
+    left: 45%;
+}
+.search {
+    top: 50%;
+    left: 55%;
+}
+.title {
+    top: 20%;
+    left: 50%;
+}
+.discription {
+    color: rgb(109, 109, 109);
+    font-size: 14px;
+    top: 30%;
+    left: 50%;
+}
+/* End: Project Section */
+
+
+/* Start: Contact Section */
+.contact-container{
+    width: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+form{
+    background: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    
+}
+  
+form .contact-text {
+    text-align: center;
+    background: rgb(21, 21, 21);
+}
+form h1 {
+    text-align: center;
+    background: rgb(21, 21, 21);
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+  
+form p{
+    text-align: center;
+    background: rgb(21, 21, 21);
+    margin-top: -10px;
+    margin-bottom: 15px;
+} 
+  
+.email-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(21, 21, 21) ;
+}
+  
+.email-name #name{
+    width: 45%;
+}
+.email-name #email{
+    width: 45%;
+}
+  
+form input, form textarea{
+    border: none;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: rgb(21, 21, 21);
+    font-size: 16px;
+    border-bottom: 2px solid #ff914d;
+    align-items: center;
+    
+}
+  
+form button{
+    padding: 15px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #ff914d;
+}
+  
+form button:hover{
+    color: #ff914d;
+}
+ /* End: Contact Section */
+  
+  /* Start: Footer Section  */
+  
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+  
+.info h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+  
+.social {
+    display: flex;
+    margin-top: 10px;
+}
+.social a{
+    padding: 0px 20px;
+    font-size: 30px;
+}
+  
+.copyright {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+  
+hr{
+    border-width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+  
+  /* End: Footer Section  */
+
+
